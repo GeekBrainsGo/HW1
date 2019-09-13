@@ -46,8 +46,8 @@ func Disk(s string) error {
 	if err != nil {
 		log.Fatalf("query fetch: %v\n", err)
 	}
-	resp.Body.Close()
 	buffer.ReadFrom(resp.Body)
+	resp.Body.Close()
 
 	answer := Answer{}
 	if err := json.Unmarshal(buffer.Bytes(), &answer); err != nil {
