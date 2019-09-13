@@ -15,3 +15,13 @@
 Документация по теме: https://yandex.ru/dev/disk/api/reference/content-docpage/
 **Это задание со звёздочкой. Выполнение не обязательно, но очень приветствуется**
 
+### anonymous student
+<p>
+
+[findlinks](findlinks/findlinks.go), [findlinks_test](findlinks/findlinks_test.go) - Write a function that will receive an input string with a search query (string) and an array of links to pages that should be searched ([]string). The result of the function should be an array of strings with links to the pages on which the search query was found. The function should look for an exact match to the phrase in the response text from the server for each of the links.
+
+</p>
+<p>
+
+[yandex](yandex/yandex.go), [yandex_test](yandex/yandex_test.go) - Write a function that receives a public link to the file from Yandex.Disk as an input and saves the received file to the user's disk.
+</p>
